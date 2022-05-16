@@ -5,6 +5,7 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    font-size: 16px;
 }
 
 section {
@@ -13,14 +14,14 @@ section {
 }
 
 h1 {
-    font-size: 120px;
+    font-size: 7.5em;
     text-align: center;
     line-height: 0.5;
 }
 
 .bottom {
     position: relative;
-    top: 25vh;
+    top: 14em;
 }
 
 .container {
@@ -33,9 +34,9 @@ h1 {
 	height: 0;
     margin-left: auto;
     margin-right: auto;
-	border-left: 25px solid transparent;
-	border-right: 25px solid transparent;
-	border-top: 20px solid gray;
+	border-left: 2.25em solid transparent;
+	border-right: 2.25em solid transparent;
+	border-top: 1.8em solid gray;
 }
 
 .typewrite {
@@ -64,8 +65,22 @@ h1 {
 }
 
 @keyframes float {
-    from {top: 1em; opacity: 0;}
+    from {top: 1.5em; opacity: 0;}
     to {top: 0em;}
+}
+
+.blink {
+    animation-name: blinking;
+    animation-timing-function: ease-in-out;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-fill-mode: backwards;
+}
+
+@keyframes blinking {
+    0% {opacity: 0;}
+    50% {opacity: 100;}
+    100% {opacity: 0;}
 }
 
 .delay-1 {
@@ -85,5 +100,5 @@ h1 {
 }
 
 .delay-5 {
-    animation-delay: 5s;
+    animation-delay: 6s;
 }
