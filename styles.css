@@ -1,3 +1,7 @@
+html {
+    font-size: 16px;
+}
+
 body {
     font-family: Helvetica, sans-serif;
     color: white;
@@ -5,7 +9,6 @@ body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
-    font-size: 16px;
 }
 
 section {
@@ -14,14 +17,14 @@ section {
 }
 
 h1 {
-    font-size: 7.5em;
+    font-size: 6rem;
     text-align: center;
     line-height: 0.5;
 }
 
 .bottom {
     position: relative;
-    top: 14em;
+    top: 7.5rem;
 }
 
 .container {
@@ -34,15 +37,15 @@ h1 {
 	height: 0;
     margin-left: auto;
     margin-right: auto;
-	border-left: 2.25em solid transparent;
-	border-right: 2.25em solid transparent;
-	border-top: 1.8em solid gray;
+	border-left: 1.5rem solid transparent;
+	border-right: 1.5rem solid transparent;
+	border-top: 1.25rem solid gray;
 }
 
 .typewrite {
     overflow: hidden;
-    border-right: 0.1em solid white;
-    height: 1em;
+    border-right: 0.1rem solid white;
+    height: 1rem;
     width: 0;
     white-space: nowrap;
     animation-name: typewrite;
@@ -53,7 +56,7 @@ h1 {
 
 @keyframes typewrite {
     from {width: 0}
-    to {width: 11em}
+    to {width: 11rem}
 }
 
 .float-in {
@@ -65,7 +68,7 @@ h1 {
 }
 
 @keyframes float {
-    from {top: 1.5em; opacity: 0;}
+    from {top: 1.5rem; opacity: 0;}
     to {top: 0em;}
 }
 
